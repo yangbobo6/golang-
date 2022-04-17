@@ -1,4 +1,4 @@
-package func1
+package main
 
 import (
 	"fmt"

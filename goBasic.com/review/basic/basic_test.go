@@ -64,6 +64,20 @@ func TestStruct(t *testing.T) {
 	fmt.Printf("%+v\n",s1)
 }
 
-
+func getValue()int{
+	return 1
+}
+func TestSwitch(t *testing.T){
+	//i := getValue()
+	i := "123"
+	switch i {
+	case "int":
+		println("int")
+	case "string":
+		println("string")
+	default:
+		println("unknown")
+	}
+}
 
 

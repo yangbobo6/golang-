@@ -11,6 +11,7 @@ func TestAnony(t *testing.T)  {
 		return math.Sqrt(a)
 	}
 	fmt.Println(getSqrt(4))
+	//fmt.Println(getSqrt)
 }
 
 //在channel中传送

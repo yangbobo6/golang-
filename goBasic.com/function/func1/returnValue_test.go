@@ -31,7 +31,7 @@ func add(a, b int) (c int) {
 }
 
 func calc(a,b int)(sum int,avg int){
-	sum = a+b
+	sum = a + b
 	avg = a/b
 	return
 }

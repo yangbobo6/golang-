@@ -1,8 +1,9 @@
-package basic
+package main
 
 import (
 	"fmt"
 	"testing"
+
 )
 
 
@@ -11,7 +12,6 @@ type Student struct {
 	age int
 }
 
-
 func TestBasic(t *testing.T) {
 	s := new(Student)
 	s.age = 12
@@ -19,12 +19,10 @@ func TestBasic(t *testing.T) {
 	fmt.Println(s.name)
 	fmt.Printf("%T\n",s)
 
-
 	a := [2]int{1}
 	a[1] = 2
 	fmt.Printf("%T\n",a)
 	fmt.Println(a)
-
 
 	slice := make([]int,0)
 	fmt.Printf("%T",slice)
@@ -34,12 +32,8 @@ func TestBasic(t *testing.T) {
 	for k,v:=range m{
 		println(k,v)
 	}
-
-
-
-
-
 }
+
 func funcMui(x,y int)(a int){
 	return x+y
 }
@@ -50,6 +44,7 @@ func TestSlice(t *testing.T) {
 	n = append(n,m...)
 
 }
+
 var(
 	n int
 
@@ -68,6 +63,7 @@ func getValue()int{
 	return 1
 }
 func TestSwitch(t *testing.T){
+
 	//i := getValue()
 	i := "123"
 	switch i {

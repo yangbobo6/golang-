@@ -18,11 +18,22 @@ func TestFunc(t *testing.T)  {
 	},"%d,%d",10,20)
 
 	println(s1,s2)
+	a := func() int{
+		return 2
+	}()
+	fmt.Println(a)
+
 }
 
+
+
 //参数是一个函数  fn func()的返回值是int类型   括号内的int是类型
-func test(fn func() int)int {
+func test(fn func() int)int{
 	return fn()
+}
+
+func testFunc(fnn func() )int{
+	return 2
 }
 
 
@@ -32,3 +43,5 @@ func format(fn FormatFunc,s string, x,y int)string {
 
 //定义函数类型
 type FormatFunc func(s string, x,y int) string
+
+

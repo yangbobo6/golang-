@@ -30,3 +30,13 @@ func TestT(t *testing.T) {
 	fmt.Println(peo.Speak(think))
 }
 
+func TestNullInter(t *testing.T) {
+	var i interface{}
+
+	a := 2
+	i = a
+	fmt.Println("---",i)
+	println(i,a)
+
+}
+

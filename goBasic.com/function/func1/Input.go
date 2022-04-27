@@ -13,7 +13,7 @@ const name string = "pig"
 
 const(
 	i = iota
-	a
+
 	b = "zz"
 	c
 	d = "a"
@@ -26,7 +26,7 @@ func main()  {
 	a2 := 2.3
 	fmt.Println(a2+a1)
 
-	fmt.Println(i,a,b,c,d,e,f)
+	fmt.Println(i,b,c,d,e,f)
 
 	fmt.Printf("%T\n",num)
 	fmt.Printf("%T\n",number)

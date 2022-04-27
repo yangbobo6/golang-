@@ -56,3 +56,31 @@ func add1(base int)func( int) int{
 	}
 }
 
+// 返回2个函数类型的返回值
+func test01(base int) (func(int) int, func(int) int) {
+	// 定义2个函数，并返回
+	// 相加
+	add := func(i int) int {
+		base += i
+		fmt.Println("+",base)
+		return base
+	}
+	// 相减
+	sub := func(i int) int {
+		base -= i
+		fmt.Println("-",base)
+		return base
+	}
+	// 返回
+	return add, sub
+}
+
+func TestMutiAdd(t *testing.T) {
+	f1 ,f2 := test01(10)
+	f1(2)
+	f2(3)
+
+	f1(4)
+
+}
+

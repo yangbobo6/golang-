@@ -47,7 +47,8 @@ func (d *dog1)move(){
 
 
 func TestMove(t *testing.T) {
-	var mv Mover = &dog1{}
+	var mv Mover
+	fugui := &dog1{}
+	mv = fugui
 	mv.move()
-
 }

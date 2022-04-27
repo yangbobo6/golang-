@@ -19,7 +19,7 @@ func (d dog)say(){
 	fmt.Printf("%s会叫的汪汪汪",d.name)
 }
 func (d dog)move(){
-	fmt.Printf("%s会动",d.move)
+	fmt.Println(1)
 }
 
 func TestMuti(t *testing.T) {
